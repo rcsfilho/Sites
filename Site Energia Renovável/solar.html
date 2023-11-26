@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Calculos.js"></script>
+    <title>Energia Solar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-green"">
+            <a class="navbar-brand" href="#">Energia Solar</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" id="historia-link">História</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="info-link">Informações</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="video-link">Videos</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="curiosidades-link">Curiosidades</a>
+                    <a href="site.Html" class="list-group-item list-group-item-action">Voltar</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div id="texto-historia" class="content">
+                    <h1>História</h1>
+                    <p>O termo "fotovoltaico" começou-se a usar no Reino Unido no ano 1849. Vem do grego φώς: phos, que significa "luz", e de -voltaico, que vem do âmbito da eletricidade, em honra ao físico italiano Alessandro Volta.</p>
+                    <p>O efeito fotovoltaico foi reconhecido pela primeira vez uns dez anos antes, em 1839, pelo físico francês Alexandre Edmond Becquerel, mas a primeira célula solar não se fabricou até 1883. Seu criador foi Charles Fritts, quem recobriu uma amostra de selênio semicondutor com pó de ouro para formar a união. Este dispositivo primitivo apresentava uma eficiência menor do 1 %, mas demonstrou de forma prática que, efectivamente, produzir eletricidade com luz era possível. Os estudos realizados no século XIX por Michael Faraday, James Clerk Maxwell, Nikola Tesla e Heinrich Hertz sobre indução eletromagnética, forças elétricas e ondas eletromagnéticas, e sobretudo os de Albert Einstein em 1905, proporcionaram a base teórica ao efeito fotoelétrico, que é o fundamento da conversão de energia solar para eletricidade.</p>
+                </div>
+                <div id="info-content" class="content" style="display: none;">
+                   <h2>Energia Solar: Uma Fonte Sustentável de Poder</h2>
+                    <p>A energia solar é uma fonte de energia renovável que tem ganhado destaque nos últimos anos como uma alternativa limpa e sustentável aos combustíveis fósseis. Vamos explorar o que é, como funciona, como é captada, o quanto rende e seus impactos ambientais.</p>
+                    <h3>O que é Energia Solar?</h3>
+                    <p>A energia solar é a energia proveniente da luz do sol que é captada e convertida em eletricidade ou calor para uso humano. Ela é abundante e, ao contrário dos combustíveis fósseis, não emite poluentes atmosféricos.</p>
+                    <h3>Como Funciona a Energia Solar?</h3>
+                    <p>A energia solar é capturada por meio de células fotovoltaicas, que são geralmente feitas de silício. Quando a luz solar incide sobre essas células, ela excita elétrons, gerando eletricidade. Os painéis solares agrupam várias dessas células para coletar a quantidade necessária de energia.</p>
+                    <h3>Como a Energia Solar é Captada?</h3>
+                    <p>Os painéis solares, comumente instalados em telhados de edifícios ou em usinas solares, captam a energia solar. Em residências, a eletricidade gerada pode ser usada diretamente ou armazenada em baterias para uso posterior. Nas usinas solares, a eletricidade é gerada em larga escala e distribuída pela rede elétrica.</p>
+                    <h3>O Quanto Rende a Energia Solar?</h3>
+                    <p>A quantidade de energia solar que pode ser gerada depende da localização geográfica, da eficiência dos painéis solares e da quantidade de luz solar disponível. Em locais ensolarados, painéis bem projetados podem gerar uma quantidade significativa de eletricidade, sendo capazes de suprir as necessidades de uma residência ou empresa.</p>
+                </div>
+                <div id="video-content" class="content" style="display: none;">
+                    <video width="640" height="360" controls>
+                        <source src="Uso_Solar_Domicilio.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+                <div id="curiosidades-content" class="content" style="display: none;">
+                    <h2>Exemplo Prático da Energia Solar</h2>
+                    <p>Clique no botão abaixo para calcular a energia gerada por uma placa solar...</p>
+                    <button id="calcular-energia-btn">Calcular Energia</button>
+                    <p>Resultado: <span id="resultado-energia"></span> watt-hora</p>
+                    <h3>Explicação dos Fatores:</h3>
+                    <p><strong>Área da Placa:</strong> A área da placa solar se refere à superfície total da placa que está exposta à luz solar. Quanto maior a área da placa, mais energia pode ser capturada.</p>
+                    <p><strong>Radiação Solar Incidente:</strong> A radiação solar incidente se refere à quantidade de luz solar que atinge a placa solar. Isso depende da localização geográfica, da época do ano, das condições climáticas e da inclinação da placa em relação ao sol.</p>
+                    <p><strong>Eficiência da Placa Solar:</strong> A eficiência da placa solar é a capacidade da placa de converter a luz solar em eletricidade. A eficiência pode variar de acordo com o tipo de painel e a qualidade da tecnologia utilizada.</p>
+                    <h4>Você sabia?</h4>
+                    <p>O consumo médio de um aparelho de ar condicionado de 12000Btus ligado 12 horas por dia é de 390.6kWh por mês!</p>
+                    <p>Considerando um consumo diário de 13kWh e uma geração de 1200 watt-hora, seriam necessárias 3 placas para apenas um ar condicionado.</p>
+                    <p>Estima-se que sejam necessárias pelo menos 7 placas em uma residência de tamanho médio.</p>
+                    <img src="Potencial solar.jpg" alt="Imagem" style="display: block; margin: 0 auto;">
+                    <h5>Fontes:</h5>
+                    <p>Aqui estão algumas fontes adicionais para obter mais informações:</p>
+                    <ul>
+                    <li><a href="https://solarfy.com.br/" target="_blank">Solarfy</a></li>
+                    <li><a href="https://www.portalsolar.com.br/" target="_blank">Portal Solar</a></li>
+                    <li><a href="https://www.neosolar.com.br/aprenda/saiba-mais/energia-solar" target="_blank">Neo Solar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+            document.getElementById("historia-link").addEventListener("click", function () {
+            var historiaContent = document.getElementById("texto-historia");
+            historiaContent.style.display = "block";
+
+             var infoContent = document.getElementById("info-content");
+            infoContent.style.display = "none";
+
+            var videoContent = document.getElementById("video-content");
+            videoContent.style.display = "none";
+
+            var curiosidadesContent = document.getElementById("curiosidades-content");
+            curiosidadesContent.style.display = "none";
+            });
+
+            document.getElementById("info-link").addEventListener("click", function () {
+            var historiaContent = document.getElementById("texto-historia");
+            historiaContent.style.display = "none";
+
+            var infoContent = document.getElementById("info-content");
+            infoContent.style.display = "block";
+
+            var videoContent = document.getElementById("video-content");
+            videoContent.style.display = "none";
+
+            var curiosidadesContent = document.getElementById("curiosidades-content");
+            curiosidadesContent.style.display = "none";
+            });
+
+            document.getElementById("video-link").addEventListener("click", function () {
+            var historiaContent = document.getElementById("texto-historia");
+            historiaContent.style.display = "none";
+
+            var infoContent = document.getElementById("info-content");
+            infoContent.style.display = "none";
+
+            var videoContent = document.getElementById("video-content");
+            videoContent.style.display = "block";
+
+            var curiosidadesContent = document.getElementById("curiosidades-content");
+            curiosidadesContent.style.display = "none";
+            });
+
+            document.getElementById("curiosidades-link").addEventListener("click", function () {
+            var historiaContent = document.getElementById("texto-historia");
+            historiaContent.style.display = "none";
+
+            var infoContent = document.getElementById("info-content");
+            infoContent.style.display = "none";
+
+            var videoContent = document.getElementById("video-content");
+            videoContent.style.display = "none";
+
+            var curiosidadesContent = document.getElementById("curiosidades-content");
+            curiosidadesContent.style.display = "block";
+            });
+
+            document.getElementById("calcular-energia-btn").addEventListener("click", function() {
+            const areaDaPlaca = parseFloat(prompt("Informe a área da placa solar (metros quadrados):"));
+            const radiacaoSolarIncidente = parseFloat(prompt("Informe a radiação solar incidente (kWh/m^2):"));
+            const eficienciaDaPlaca = parseFloat(prompt("Informe a eficiência da placa solar (decimal, por exemplo, 0.15 para 15%):"));
+
+            // Verifique se os valores inseridos são números válidos
+            if (isNaN(areaDaPlaca) || isNaN(radiacaoSolarIncidente) || isNaN(eficienciaDaPlaca)) {
+             alert("Por favor, insira valores numéricos válidos.");
+            } else {
+            // Cálculo da energia
+            const energiaGerada = areaDaPlaca * radiacaoSolarIncidente * eficienciaDaPlaca;
+            document.getElementById("resultado-energia").textContent = energiaGerada.toFixed(2) + " watt-hora"; // Exibir resultado
+            }
+            });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

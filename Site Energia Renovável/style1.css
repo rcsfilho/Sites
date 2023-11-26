@@ -1,0 +1,57 @@
+body{
+    background-image: url('Placas2.jpg');
+    background-size: cover; /* Define o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-position: center; /* Centraliza a imagem no elemento */   
+}
+h1, h2, h3, h4, p{
+    color:white;
+    text-align: center;
+    
+}
+
+.bg-green {
+    background-color: blue; /* Define a cor de fundo da barra como azul */
+}
+
+
+#video-content{
+    margin-top: 100px; /* Ajuste o valor da margem superior conforme necessário */   
+    padding: 0; /* Remove preenchimentos padrão do vídeo */
+}
+ul{text-align: center;
+}
+#curiosidades-content {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+#calcular-energia-btn {
+    display: block; /* Torna o botão um elemento de bloco para centralizá-lo */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+#info-content {
+    text-align: justify; /* Texto justificado */
+    margin: 20px; /* Espaçamento interno para melhor legibilidade */
+    max-width: 800px; /* Largura máxima para controlar o tamanho do conteúdo */
+}
+
+.content {
+    display: none;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#texto-historia {
+    margin-top: 60px;
+    display: block;
+}
+
+.content {
+    display: none;
+}

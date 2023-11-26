@@ -1,0 +1,80 @@
+.centro{
+    text-align: center;
+}
+.justificado{
+    text-align: justify;
+}
+.recuo{
+    text-indent: 50px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px; 
+}
+  
+.grid-item img { 
+    width: 180px;
+    height: 150px;
+    position: relative;
+}
+.grid-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-item2 {
+    width: 180px; 
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+}
+.grid-item2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.legenda {
+    font-size: 16px;
+    color: #333; 
+    text-align: center; 
+}
+.video-thumbnails {
+    display: flex; /* Exibe as miniaturas em uma linha */
+    justify-content: space-between; /* Espaço igual entre as miniaturas */
+    align-items: center; /* Alinha as miniaturas verticalmente ao centro */
+}
+
+.video-thumbnails img {
+    width: 200px; /* Largura desejada para as miniaturas */
+    height: auto; /* Altura ajustada automaticamente */
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+}
+  
+.grid-item3 img{
+    width: 400px;
+    height: 250px;
+    position: relative;
+
+}
+
+.center-link {
+    text-align: center;
+    display: block;
+}
+
+.center-link img {
+    width: 80px; 
+    height: auto;
+}
+
+
+

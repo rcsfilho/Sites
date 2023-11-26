@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="eolica.css"> <!-- Caminho para o seu arquivo CSS -->
+    <script src="Calculos.js"></script>
+    <title>Energia Eólica</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <a class="navbar-brand" href="#">Energia Eólica</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" id="historia-link">História</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="info-link">Informações</a>
+                    <a href="#Videos" class="list-group-item list-group-item-action" id="video-link">Videos</a>
+                    <a href="#Curiosidades" class="list-group-item list-group-item-action" id="curiosidade-link">Curiosidades</a>
+                    <a href="site.Html" class="list-group-item list-group-item-action">Voltar</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div id="texto-historia" class="content">
+                <h1>História</h1>
+                <p>A energia eólica tem sido aproveitada desde a antiguidade para mover os barcos impulsionados por velas ou para fazer funcionar a engrenagem de moinhos, ao mover as suas pás. Nos moinhos de vento a energia eólica era transformada em energia mecânica, utilizada na moagem de grãos ou para bombear água. Os moinhos foram usados para fabricação de farinhas e ainda para drenagem de canais, sobretudo nos Países Baixos.</p>
+                <p>Ao longo de milhares de anos, a força do vento tem sido aproveitada de inúmeras formas, desde o impulso de veleiros e barcos à vela, até à ventilação natural de edifícios. A utilização do vento para produzir energia mecânica surgiu relativamente tarde na Antiguidade. A roda de vento do engenheiro grego Herão de Alexandria, concebida durante o século I d.C., é o mais antigo registro do uso de uma ferramenta destinada a captar a força do vento para alimentar uma máquina.</p>
+                <p>Em julho de 1887, James Blyth, um engenheiro escocês, construiu uma turbina com pás de tecido no jardim e aproveitou a eletricidade produzida para carregar acumuladores que usava para iluminar a sua casa</p>
+                <p>A sua experiência daria origem em 1891 a uma patente. No inverno de 1888, o inventor norte-americano Charles Francis produziu eletricidade através de um gerador alimentado a energia eólica, que fornecia eletricidade à sua residência e laboratório. Na década de 1890, o inventor dinamarquês Poul la Cour construiu geradores eólicos para produzir eletricidade, que usava para produzir hidrogénio e oxigénio através de eletrólise, guardando uma mistura dos dois gases para usar como combustível. La Cour foi o primeiro a descobrir que turbinas que girassem a uma velocidade maior e com menos pás eram as mais eficientes para produzir eletricidade. Em 1904 fundou a Sociedade dos Eletricistas Eólicos.</p>
+            </div>  
+            <div class="col-lg-9">
+                <div id="info-content" class="content" style="display: none;">
+                    <h2>Energia Eólica</h2>
+                    <p>A energia eólica é uma forma de energia renovável que utiliza a força do vento para gerar eletricidade. É considerada uma das fontes mais limpas e sustentáveis de energia disponíveis atualmente.</p>
+                    <h3>Como Funciona?</h3>
+                    <p>O funcionamento da energia eólica envolve o uso de aerogeradores, que são compostos por hélices (rotores) acionadas pela força do vento. Conforme o vento passa pelas hélices, elas começam a girar, acionando um gerador, responsável por converter a energia cinética do vento em energia elétrica utilizável.</p>
+                    <h3>Como é Captada?</h3>
+                    <p>A energia eólica é captada através de parques eólicos, onde diversas turbinas são instaladas. As turbinas são posicionadas em locais com ventos mais favoráveis, próximos a áreas abertas e com pouca obstrução, como colinas ou áreas costeiras. As turbinas são geralmente montadas em torres altas para aproveitar ventos mais fortes e consistentes.</p>
+                    <h3>Potencial de Utilização e Rendimento?</h3>
+                    <p>O potencial de utilização da energia eólica é vasto e depende da localização e das condições climáticas de cada região. Em geral, a energia eólica tem um rendimento variável ao longo do ano, uma vez que depende da disponibilidade de ventos. No entanto, os avanços tecnológicos têm aumentado a eficiência e o rendimento das turbinas eólicas.</p>
+                </div>
+                <div id="video-content" class="content" style="display: none;">
+                    <h2>Vídeos sobre Energia Eólica</h2>
+                    <p>Aqui estão alguns vídeos interessantes sobre energia eólica:</p>
+                    <ul>
+                        <li><a href="https://youtu.be/ekfFM-uWh5k?feature=shared" target="_blank">Introdução à Energia Eólica</a></li>
+                    </ul>
+                    <h2>Energia de Ionização</h2>
+                    <p>Aqui estão alguns links adicionais relacionados à energia eólica:</p>
+                    <ul>
+                        <li><a href="https://www.todoestudo.com.br/quimica/energia-de-ionizacao#:~:text=A%20energia%20de%20ioniza%C3%A7%C3%A3o%20pode,(g)%20%2B%20e%E2%80%93" target="_blank">Energia de Ionização</a></li>
+                    </ul>
+                </div>
+                <div id="curiosidades-content" class="content" style="display: none;">
+                    <h2>Exemplo Prático da Energia Eólica</h2>
+                    <p>Clique no botão abaixo para calcular a energia gerada por uma Turbina.</p>
+                    <button id="calcular-energia-btn">Calcular Energia</button>
+                    <p>Resultado: <span id="resultado-energia"></span> watts</p>
+                    <h3>Dados</h3>
+                    <p>Em 2012 a capacidade mundial de geração de energia elétrica através da energia eólica foi de aproximadamente 282 gigawatts (GW), o suficiente para abastecer as necessidades básicas de dois países como o Brasil(o Brasil gastou em média 70 gigawatts em janeiro de 2010).</p>
+                    <p>A capacidade de geração de energia eólica no Brasil vem aumentando ano a ano. Em 2008 era de 341 MW, em 2009 passou 606 MW, e em 2010 atingiu o valor de 920 MW. O Brasil responde por cerca da metade da capacidade instalada na América Latina, mas representa apenas 0,38% do total mundial.</p>
+                    <p>Desde 2010 a china é o maior produtor de energia eólica. Em 2020 o total da capacidade instalada nesse país ultrapassava os 288 GW, um aumento de 21% comparado aos 230GW instalados até 2019.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para carregar a página
+        function carregarPagina() {
+        // Exibir o conteúdo da História por padrão
+        document.getElementById("texto-historia").style.display = "block";
+
+        // Esconder os outros conteúdos
+        document.getElementById("info-content").style.display = "none";
+        document.getElementById("video-content").style.display = "none";
+        document.getElementById("curiosidades-content").style.display = "none";
+         }
+
+        // Função para mostrar conteúdo com base no link clicado
+         function mostrarConteudo(linkId) {
+        document.getElementById("texto-historia").style.display = "none";
+        document.getElementById("info-content").style.display = "none";
+        document.getElementById("video-content").style.display = "none";
+        document.getElementById("curiosidades-content").style.display = "none";
+
+        document.getElementById(linkId).style.display = "block";
+        }
+
+        // Eventos de clique nos links
+        document.getElementById("historia-link").addEventListener("click", function () {
+        mostrarConteudo("texto-historia");
+        });
+
+        document.getElementById("info-link").addEventListener("click", function () {
+        mostrarConteudo("info-content");
+        });
+
+        document.getElementById("video-link").addEventListener("click", function () {
+        mostrarConteudo("video-content");
+        });
+
+        document.getElementById("curiosidade-link").addEventListener("click", function () {
+        mostrarConteudo("curiosidades-content");
+        });
+
+        // Chamar a função de carregar a página quando a página for carregada
+        window.addEventListener("load", carregarPagina);
+
+        document.getElementById("calcular-energia-btn").addEventListener("click", function() {
+        const velocidadeVento = parseFloat(prompt("Informe a velocidade do vento (metros por segundo):"));
+        const areaVarrida = parseFloat(prompt("Informe a área varrida pelas pás da turbina (metros quadrados):"));
+        const eficiencia = parseFloat(prompt("Informe a eficiência da turbina (decimal, por exemplo, 0.30 para 30%):"));
+
+        const energia = calcularEnergiaTurbinaEolica(velocidadeVento, areaVarrida, eficiencia);
+        document.getElementById("resultado-energia").textContent = energia.toFixed(2);
+        });       
+    </script>
+</body>
+</html>

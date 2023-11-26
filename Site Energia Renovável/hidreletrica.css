@@ -1,0 +1,26 @@
+body{
+    background-image: url('uhe.jpg');
+    background-size: cover; /* Define o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-position: center; /* Centraliza a imagem no elemento */   
+}
+h1, h2, h3, h4, p{
+    color: white;
+    text-align: center;
+    
+}
+.bg-green {
+    background-color: mediumslateblue; /* Define a cor de fundo da barra como azul médio*/
+}
+
+#curiosidades-content {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+#calcular-energia-btn {
+    display: block; /* Torna o botão um elemento de bloco para centralizá-lo */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.content {
+    display: none;
+}

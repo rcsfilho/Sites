@@ -1,0 +1,32 @@
+body{
+    background-image: url('simbolo.jpg');
+    background-size: cover; /* Define o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-position: center; /* Centraliza a imagem no elemento */   
+}
+.bg-green {
+    background-color: goldenrod; /* Define a cor de fundo da barra como verde */
+}
+
+
+h2, p{
+    color: white;
+    text-align: center;
+    
+}
+footer {
+    text-align: center;
+    margin-left: 300px; /* Adicione a margem esquerda desejada */
+}
+
+footer p {
+    margin: 0; /* Remove as margens padrão */
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura da tela inteira para centralização vertical */
+    margin-left: 300px;
+}
